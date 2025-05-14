@@ -1,3 +1,4 @@
+import './App.css';
 import SerieComponent from "./components/SerieComponent";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
