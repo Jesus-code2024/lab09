@@ -1,4 +1,7 @@
 import SerieComponent from "./components/SerieComponent";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
     const series = [
@@ -12,6 +15,8 @@ function App() {
 
     return (
         <div className="container mt-3">
+            <Header />
+            <Menu />
             <h1 className="border-bottom pb-3 mb-3">Series</h1>
             <div className="row">
                 {series.map((serie) => (
@@ -25,6 +30,7 @@ function App() {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }

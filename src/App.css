@@ -1,0 +1,15 @@
+Header {
+  background: #007bff;
+  color: #fff;
+  padding: 24px 0 16px 0;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+Header h2 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
