@@ -1,12 +1,39 @@
-# React + Vite
+# Laboratorio N°09 - Desarrollo de Aplicaciones Empresariales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 Descripción
 
-Currently, two official plugins are available:
+Este laboratorio tiene como objetivo introducir al estudiante en la configuración del entorno de desarrollo y la creación de una aplicación básica utilizando **ReactJS** y **Bootstrap**. Se trabajó de forma individual y sobre un entorno local basado en Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Objetivos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Configurar correctamente el entorno de desarrollo para proyectos en ReactJS.
+- Crear una aplicación React desde cero utilizando Vite.
+- Implementar componentes reutilizables y estilizados con Bootstrap.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- [ReactJS](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- Node.js (versión LTS)
+
+---
+
+## 🚀 Instalación y Ejecución
+
+1. Instalar Node.js desde: [https://nodejs.org/en/](https://nodejs.org/en/)
+2. Crear el proyecto con Vite:
+
+   ```bash
+   npm create vite@latest lab09 -- --template react
+   cd lab09
+   npm install
+   npm run dev
+## Acceder a la aplicación en: 
+
+http://localhost:5173
+
