@@ -1,74 +1,39 @@
-function App () {
-  return (
-    <div className="container mt-3">
-      <h1 className="border-bottom pb-3 mb-3">Series</h1>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="card">
-            <img 
-              className="card-img-top" 
-              src="https://dummyimage.com/400x250/000/fff&text=Friends" 
-              alt="img" />
-            <div className="card-body">
-              <h5 className="card-title">Friends</h5>
-              <p className="card-text">Comedy</p>
-              <button className="btn btn-primary">Description</button>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card">
-            <img 
-              className="card-img-top" 
-              src="https://dummyimage.com/400x250/000/fff&text=Law+and+order" 
-              alt="img" />
-            <div className="card-body">
-              <h5 className="card-title">Law & orden</h5>
-              <p className="card-text">Drama</p>
-              <button className="btn btn-primary">Description</button>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card">
-            <img 
-              className="card-img-top" 
-              src="https://dummyimage.com/400x250/000/fff&text=The+Big+Bang+Theory" 
-              alt="img" />
-            <div className="card-body">
-              <h5 className="card-title">The Big Bang Theory</h5>
-              <p className="card-text">Comedy</p>
-              <button className="btn btn-primary">Description</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-import SerialComponent from "./components/SerialComponent";
+import SerieComponent from "./components/SerieComponent";
 
 function App() {
+    const series = [
+        { cod: 1, nom: "Friends", cat: "Comedy", img: "friends.png" },
+        { cod: 2, nom: "Law & Order", cat: "Drama", img: "law-and-order.png" },
+        { cod: 3, nom: "The Big Bang Theory", cat: "Comedy", img: "the-big-bang-theory.png" },
+        { cod: 4, nom: "Stranger Things", cat: "Terror", img: "stranger-things.png" },
+        { cod: 5, nom: "Dr. House", cat: "Drama", img: "dr-house.png" },
+        { cod: 6, nom: "The X-Files", cat: "Drama", img: "the-x-files.png" }
+    ];
+
     return (
         <div className="container mt-3">
             <h1 className="border-bottom pb-3 mb-3">Series</h1>
             <div className="row">
-                <div className="col-md-4">
-                    <SerialComponent />
-                </div>
-                <div className="col-md-4">
-                    <SerialComponent />
-                </div>
-                <div className="col-md-4">
-                    <SerialComponent />
-                </div>
+                {series.map((serie) => (
+                    <div key={serie.cod} className="col-md-4 mb-3">
+                        <SerieComponent
+                            codigo={serie.cod}
+                            nombre={serie.nom}
+                            categoria={serie.cat}
+                            imagen={serie.img}
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     );
 }
 
+<<<<<<< HEAD
 export default App
 
 
 
+=======
+export default App;
+>>>>>>> 03dc5ebfdc136bde0e9de1297d8c70c94a993846
